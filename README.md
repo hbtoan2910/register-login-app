@@ -32,11 +32,13 @@ Ahead of that, user has to do the registration. (use Postman to send POST reques
 
   1. appuser data is saved into app_user table, token is saved into confirmation_token table. Relation between appuser & token is OneToMany. (a user can have multiple tokens)
      
-     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/b919ac5d-28e9-42a4-8a0e-0317ab3f4176)
+     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/8a55a38d-5511-444c-8be9-ee1ed6e39d0c)
+
+     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/2bb355cf-2608-4ada-acaa-0d7eed1483fd)
+
      
-     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/52743d32-6a6b-43bc-86ec-95bf37ff3a90)
-     
-     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/7ccbf91d-f4be-48b4-bd6d-53474a214b29)
+
+
   
   3. appuser is created with enable field = 'false' by default. In order for this user to be able to log in, must change this field to 'true'
      
