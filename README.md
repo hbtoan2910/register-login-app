@@ -66,6 +66,12 @@ Ahead of that, user has to do the registration. (use Postman to send POST reques
      
      ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/bfa15edf-2d3c-4a5b-ae29-4d8741958d31)
 
+6. Plus, we can use our own REAL Gmail to test directly like below setting (appplication.yml).
+
+   In this case, we can omit this step: helper.setFrom("ryan@gmail.com") in EmailService.java.
+
+   ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/b617403f-eb12-4cca-99a2-28e5492d0318)
+    
 # Generate a cURL from a request in Postman:
      ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/9ed3bdeb-0673-4a45-abe3-632cb3e32ebb)
 
