@@ -3,7 +3,16 @@ server:
     include-message: always
     include-binding-errors: always
 
+logging:
+   level:
+      org:
+         springframework:
+            web: DEBUG #In this case, it's set to the DEBUG level, which includes log statements with DEBUG, INFO, WARN, and ERROR levels
 spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    
   datasource:
     url: jdbc:postgresql://localhost:5432/loginandregistration
     username: ryanhuynh
@@ -18,19 +27,25 @@ spring:
     show-sql: true
 
   mail:
-    host: localhost
-    port: 1025
-    username: hello
-    password: hello
+    host: localhost #SMTP server host (maildev)
+    port: 1025 		#Port for the SMTP server
+    username: hello #Your email username
+    password: hello #Your email password
 
+    #host: smtp.gmail.com  #SMTP server host of Gmail
+    #port: 587 		      #Port for the SMTP server of Gmail
+    #username: hbtoan2910@gmail.com       #Your email username
+    #password: isto rkqy sfow rmza       #Your email password but in this case it is AppPasswords created in your google account.
+    
     properties:
       mail:
         smtp:
           ssl:
             trust: "*"
-          auth: true
+          auth: true #Enable authentication
           starttls:
             enable: true
           connectiontimeout: 5000
           timeout: 3000
           writetimeout: 5000
+          

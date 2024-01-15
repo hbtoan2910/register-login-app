@@ -1,11 +1,10 @@
 package com.ryanhuynh.demo.appuser;
 
+import com.ryanhuynh.demo.email.EmailSender;
 import com.ryanhuynh.demo.registration.token.ConfirmationToken;
 import com.ryanhuynh.demo.registration.token.ConfirmationTokenService;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -25,6 +24,7 @@ public class AppUserService implements UserDetailsService {
 	private final AppUserRepository appUserRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
     private final ConfirmationTokenService confirmationTokenService;
+    private final EmailSender emailSender;
     
 	@Override
     public UserDetails loadUserByUsername(String email)
@@ -34,16 +34,18 @@ public class AppUserService implements UserDetailsService {
                         new UsernameNotFoundException(
                                 String.format(USER_NOT_FOUND_MSG, email)));
     }
-
+	
+	//Create appuser + generate token for that appuser (table app_user & table confirmation_token)
     public String signUpUser(AppUser appUser) {
         boolean userExists = appUserRepository
                 .findByEmail(appUser.getEmail())
                 .isPresent();
 
         if (userExists) {
-            // TODO check of attributes are the same and
             // TODO if email not confirmed send confirmation email.
-
+        	if (appUser.getEnabled() == false) {
+        		//enableAppUser(appUser.getEmail());
+        	}
             throw new IllegalStateException("email already taken");
         }
 
@@ -65,8 +67,6 @@ public class AppUserService implements UserDetailsService {
 
         confirmationTokenService.saveConfirmationToken(
                 confirmationToken);
-
-//        TODO: SEND EMAIL
 
         return token;
     }
