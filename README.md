@@ -12,7 +12,8 @@
 
 # Explanation:
 
-Basically, user can see homepage (/home, /index, /) but for other pages, user has to login
+Basically, user can see homepage (/home, /index, /) but for other pages, user has to login.
+
 Fresh start of application:
 
 ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/eb7ed116-6551-4f22-ba24-49a8f15b8ae8)
