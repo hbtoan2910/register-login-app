@@ -40,7 +40,7 @@ Ahead of that, user has to do the registration. (use Postman to send POST reques
      
   4. after registration, an email will be sent to user, user has to click on link to activate his/her account (including change from enable=false to enable=true)
      
-  5. we need server + web interface for testing, to do that, let's use 'maildev' library in simple nodejs project.
+  5. we need SMTP server + web interface for testing, to do that, let's use 'maildev' library in simple nodejs project.
      
      ('maildev' : SMTP Server + Web Interface for viewing and testing emails during development)
      
