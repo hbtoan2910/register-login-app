@@ -67,7 +67,8 @@ Ahead of that, user has to do the registration. (use Postman to send POST reques
      ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/bfa15edf-2d3c-4a5b-ae29-4d8741958d31)
 
 # Generate a cURL from a request in Postman:
-![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/4e2f433a-dae8-4a37-9d56-b83e2957636f)
+     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/9ed3bdeb-0673-4a45-abe3-632cb3e32ebb)
+
 
 
 
