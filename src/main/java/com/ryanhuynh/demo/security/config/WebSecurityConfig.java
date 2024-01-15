@@ -25,6 +25,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
+                	.antMatchers("/", "/home", "/index")
+                	.permitAll() // Allow access to the homepage
                     .antMatchers("/api/v*/registration/**")
                     .permitAll()
                 .anyRequest()
