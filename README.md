@@ -45,8 +45,9 @@ Ahead of that, user has to do the registration. (use Postman to send POST reques
   4. after registration, an email will be sent to user, user has to click on link to activate his/her account (including change from enable=false to enable=true)
      
   5. we need an Email server for testing, to do that, let's use maildev library in simple nodejs project
-     if we access 'http://0.0.0.0:1080/' error will show up. let's update to 'http://localhost:1080' then it works
-     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/3a4c8596-fa65-4bc8-bad0-2158ca8fcceb)
+     if we access 'http://0.0.0.0:1080/' error will show up. let's update to 'http://localhost:1080' then it works.
+     
+     ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/135a987a-cc05-4462-bece-5c953b590ce9)
 
      ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/ce990850-0775-4130-aa1e-44f1584d382d)
      
