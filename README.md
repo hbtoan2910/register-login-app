@@ -7,7 +7,8 @@
    - Email verification with expiry
    - Thymeleaf - to demonstrate loading some pages (homepage - no authorization needed / productpage - authorization needed)
    - 
-# Note with Lombok (if lombok seems to not working, follow below instruction)
+# Note with Lombok 
+  If lombok seems to not working, follow below instruction: https://stackoverflow.com/questions/11803948/lombok-is-not-generating-getter-and-setter
 
 ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/3811f5c2-ea2d-46ad-b75a-6e8e128289e3)
 
