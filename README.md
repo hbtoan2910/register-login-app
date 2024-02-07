@@ -6,6 +6,11 @@
    - Java Mail
    - Email verification with expiry
    - Thymeleaf - to demonstrate loading some pages (homepage - no authorization needed / productpage - authorization needed)
+   - 
+# Note with Lombok (if lombok seems to not working, follow below instruction)
+
+![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/3811f5c2-ea2d-46ad-b75a-6e8e128289e3)
+
 
 #  Application flow:
 ![image](https://github.com/hbtoan2910/register-login-app/assets/59778636/56d5f169-db92-47d0-a510-b14e52465f0f)
